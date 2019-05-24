@@ -1,0 +1,1476 @@
+@import 'slick';
+@import 'slick-theme';
+
+body {
+  *, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  font-family: 'gothambold1', sans-serif;
+
+  header {
+    margin-top: 55px;
+
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+
+      .logo {
+        width: 241px;
+        height: 54px;
+        a{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .menu {
+        width: 52%;
+        min-width: 455px;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+
+          .menu-item {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+
+            .menu-point {
+              border: 1px solid #fff;
+              border-radius: 100%;
+              width: 9px;
+              height: 9px;
+              margin-right: 14px;
+
+            }
+
+            a {
+              font-family: 'GothamBook', sans-serif;
+              color: #fff;
+              font-size: 14px;
+              text-transform: uppercase;
+              text-decoration: none;
+            }
+
+          }
+
+          .menu-item:hover .menu-point {
+            border: 1px solid #fff;
+            border-radius: 100%;
+            width: 9px;
+            height: 9px;
+            background-color: #fff;
+          }
+        }
+      }
+
+      .social {
+        width: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          width: 40px;
+          height: 40px;
+          border: 1px solid #fff;
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 16px;
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+
+  main {
+
+    .section-hero {
+      margin-top: -109px;
+      width: 100%;
+      height: 100vh;
+      background: url("../../monticello/img/bg-hero.jpg") center center no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+
+      .slider {
+        width: 88%;
+
+
+        .sliderItem {
+          max-width: 950px;
+          margin: 0 auto;
+          height: 20em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          outline: none;
+          margin-left: calc(50% - 475px);
+
+
+          h1 {
+            text-transform: uppercase;
+            font-size: 80px;
+
+            letter-spacing: .05em;
+            color: #fff;
+          }
+
+          span {
+            display: block;
+            //font-family: 'GothamBook', sans-serif;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: .3em;
+            text-transform: uppercase;
+            color: #fff;
+          }
+        }
+
+        .slick-dots {
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+
+          li {
+            list-style: none;
+            margin: 15px 0;
+          }
+
+          .slick-active button {
+            background-color: white;
+          }
+
+          button {
+            border-radius: 50%;
+            width: 9px;
+            height: 9px;
+            border: 1px solid #fff;
+            background-color: transparent;
+            text-indent: -9999px;
+            outline: 0;
+
+            &:hover {
+              background-color: #fff;
+            }
+          }
+        }
+
+        .slick-list {
+
+          .slick-track {
+            text-align: center;
+
+            .slick-current {
+
+            }
+          }
+        }
+
+      }
+
+
+      .arrow-down {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 100px;
+
+
+        a {
+          width: 15px;
+          height: 15px;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+
+    }
+
+    .section-weDo {
+      overflow-x: hidden;
+      width: 100%;
+
+      .ba-container {
+        margin-top: 100px;
+
+        height: 100%;
+
+        .title {
+          height: 84px;
+          font-family: 'gothambold1', sans-serif;
+          font-size: 44px;
+          color: #2c4058;
+          text-transform: uppercase;
+          margin: 0 auto 100px auto;
+          padding-top: 40px;
+          position: relative;
+          width: 320px;
+
+
+          &:before {
+            content: '';
+            width: 100px;
+            height: 2px;
+            background-color: #2c4058;
+            position: absolute;
+            top: 0;
+            left: calc(50% - 50px);
+
+          }
+        }
+
+
+        .grid-proj1 {
+          display: grid;
+          grid-template-columns: 52% 42%;
+          grid-template-rows: 70px auto;
+          column-gap: 60px;
+          width: 100%;
+          margin-bottom: 140px;
+
+          .gridProj1-bg_img {
+            background: url("../../monticello/img/bg-proj1.jpg") center center no-repeat;
+            background-size: cover;
+            position: relative;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+
+            &:before {
+              content: '';
+              width: 100%;
+              height: 100%;
+              background-color: #55b7ff;
+              position: absolute;
+              bottom: 15%;
+              right: 41%;
+              z-index: -1;
+            }
+          }
+
+          .gridProj1-about {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            color: #2c4058;
+            padding: 60px 0;
+            width: 100%;
+
+
+            h3 {
+              font-family: 'GothamBook', sans-serif;
+              font-size: 22px;
+              margin-bottom: 15px;
+              text-transform: uppercase;
+            }
+
+            h2 {
+              font-family: 'gothambold1', sans-serif;
+              font-size: 44px;
+              text-transform: uppercase;
+
+            }
+
+            .slide {
+              min-height: 57px;
+              height: 57px;
+              overflow: hidden;
+              margin: 40px 0;
+            }
+
+            .button-proj1 {
+              width: 190px;
+              height: 50px;
+              border: 1px solid #2c4058;
+              background: transparent;
+              color: #2c4058;
+              text-transform: uppercase;
+              margin-bottom: 60px;
+              outline: none;
+
+              &:hover {
+                -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                border: none;
+              }
+            }
+
+            span {
+              display: block;
+              font-family: 'open-sans', sans-serif;
+              font-style: italic;
+              font-size: 18px;
+              color: #2c4058;
+            }
+
+          }
+
+
+        }
+
+        .grid-proj2 {
+          display: grid;
+          grid-template-columns: 42% 52%;
+          grid-template-rows: 70px auto;
+          column-gap: 60px;
+          width: 100%;
+          margin-bottom: 140px;
+
+          .gridProj2-about {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            color: #2c4058;
+            padding: 60px 0;
+            width: 100%;
+
+
+            h3 {
+              font-family: 'GothamBook', sans-serif;
+              font-size: 22px;
+              margin-bottom: 15px;
+              text-transform: uppercase;
+            }
+
+            h2 {
+              font-family: 'gothambold1', sans-serif;
+              font-size: 44px;
+              text-transform: uppercase;
+
+            }
+
+            div {
+              height: 57px;
+              overflow: hidden;
+              margin: 40px 0;
+            }
+
+            .button-proj2 {
+              width: 190px;
+              height: 50px;
+              border: 1px solid #2c4058;
+              background: transparent;
+              color: #2c4058;
+              text-transform: uppercase;
+              margin-bottom: 60px;
+              outline: none;
+
+              &:hover {
+                -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                border: none;
+              }
+            }
+
+            span {
+              display: block;
+              font-family: 'open-sans', sans-serif;
+              font-style: italic;
+              font-size: 18px;
+              color: #2c4058;
+            }
+
+          }
+
+          .gridProj2-bg_img {
+            background: url("../../monticello/img/bg-proj2.jpg") center center no-repeat;
+            background-size: cover;
+            position: relative;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+            &:after {
+              content: '';
+              width: 100%;
+              height: 100%;
+              background-color: #7e5aff;
+              position: absolute;
+              bottom: 15%;
+              left: 41%;
+              z-index: -1;
+            }
+          }
+
+        }
+      }
+
+    }
+
+    .section-news {
+      background: url("../../monticello/img/bg-news.jpg") center center no-repeat;
+      background-size: cover;
+      height: 1035px;
+      width: 100%;
+      padding-top: 140px;
+
+      .ba-container {
+
+
+        .title {
+          height: 84px;
+          text-align: center;
+          font-family: 'gotham_mediumregular', sans-serif;
+          font-size: 44px;
+          color: #fff;
+          text-transform: uppercase;
+          margin: 0 auto 100px auto;
+          padding-top: 40px;
+          position: relative;
+          width: 330px;
+
+
+          &:before {
+            content: '';
+            width: 100px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: calc(50% - 50px);
+
+          }
+        }
+
+        .slider_news {
+          width: 100%;
+          margin: 0 auto;
+          position: relative;
+
+          .prevButton {
+            background: url("../../monticello/img/arrowLeft.png") center center no-repeat;
+            content: "";
+            width: 40px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            left: -5px;
+            top: calc(50% - 20px);
+            cursor: pointer;
+          }
+
+          .nextButton {
+            background: url("../../monticello/img/arrowRight.png") center center no-repeat;
+            content: "";
+            width: 40px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            right: -5px;
+            top: calc(50% - 15px);
+            cursor: pointer;
+          }
+
+          .slick-dots {
+            position: absolute;
+            bottom: -70px;
+
+
+            li {
+              list-style: none;
+              margin: 15px 0;
+            }
+
+            .slick-active button {
+              background-color: white;
+            }
+
+            button {
+              border-radius: 50%;
+              width: 9px;
+              height: 9px;
+              border: 1px solid #fff;
+              background-color: transparent;
+              text-indent: -9999px;
+              outline: 0;
+
+              &:hover {
+                background-color: #fff;
+              }
+            }
+          }
+
+          .slider-news-item {
+            width: 370px;
+            //height: 515px;
+            margin: 0 10px;
+
+
+            .itemBG {
+              height: 47%;
+              width: 100%;
+            }
+
+            .itemInfo {
+              height: 53%;
+              width: 100%;
+              padding: 30px 20px;
+              background-color: #fff;
+
+              h2 {
+                font-family: 'gothambold1', sans-serif;
+                font-size: 22px;
+                line-height: 34px;
+                color: #2c4058;
+              }
+
+              p {
+                font-family: 'open-sans', sans-serif;
+                font-size: 18px;
+                line-height: 30px;
+                color: #4b5562;
+                margin-bottom: 38px;
+              }
+
+              .author {
+                height: 60px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .photo {
+
+                  margin-right: 20px;
+                }
+
+                .name {
+                  font-family: 'GothamBook', sans-serif;
+                  font-size: 18px;
+                  line-height: 22px;
+                  color: #2c4058;
+                  display: flex;
+                  flex-direction: column;
+
+                  span {
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #55b7ff;
+                  }
+                }
+              }
+            }
+
+
+          }
+
+          .itemDunn {
+
+            .itemBG {
+              background-image: url("../../monticello/img/lauren-mancke.jpg");
+              background-size: cover;
+              //width: 370px;
+              height: 240px;
+
+            }
+
+            .itemInfo {
+              .author {
+                .photo {
+                  background-image: url("../../monticello/img/dunn.png");
+                  width: 60px;
+                  height: 60px;
+                }
+              }
+            }
+          }
+
+          .itemFreeman {
+
+            .itemBG {
+              background-image: url("../../monticello/img/matthew-hamilton.jpg");
+              background-size: cover;
+              //width: 370px;
+              height: 240px;
+
+            }
+
+            .itemInfo {
+              .author {
+                .photo {
+                  background-image: url("../../monticello/img/freeman.png");
+                  width: 60px;
+                  height: 60px;
+                }
+              }
+            }
+          }
+
+          .itemWard {
+
+            .itemBG {
+              background-image: url("../../monticello/img/joel-filipe.jpg");
+              background-size: cover;
+              height: 240px;
+
+            }
+
+            .itemInfo {
+              .author {
+                .photo {
+                  background-image: url("../../monticello/img/ward.png");
+                  width: 60px;
+                  height: 60px;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+    .section-gallery {
+      padding-top: 140px;
+
+      .ba-container {
+
+        .title {
+          height: auto;
+          text-align: center;
+          font-family: 'gotham_mediumregular', sans-serif;
+          font-size: 44px;
+          color: #2c4058;
+          text-transform: uppercase;
+          margin: 0 auto 100px auto;
+          padding-top: 40px;
+          position: relative;
+          width: 330px;
+
+          &:before {
+            content: '';
+            width: 100px;
+            height: 2px;
+            background-color: #2c4058;
+            position: absolute;
+            top: 0;
+            left: calc(50% - 50px);
+
+          }
+        }
+
+        .gallery__grid {
+          margin-top: -10px;
+          display: grid;
+          width: 100%;
+          height: 440px;
+          grid-template-rows: repeat(2, 1fr);
+          grid-template-columns: 2fr 1fr 1fr;
+          column-gap: 10px;
+          row-gap: 10px;
+          margin-bottom: 60px;
+
+
+          .gallery__grid--item {
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+          }
+
+          .gallery__grid--item1 {
+            background: url("../../monticello/img/gallery__grid--item1.jpg") center center no-repeat;
+
+            grid-row-start: 1;
+            grid-row-end: 3;
+          }
+
+          .gallery__grid--item2 {
+            background: url("../../monticello/img/gallery__grid--item2.jpg") center center no-repeat;
+            grid-row-start: 1;
+            grid-row-end: 2;
+          }
+
+          .gallery__grid--item3 {
+            background: url("../../monticello/img/gallery__grid--item3.jpg") center center no-repeat;
+            grid-row-start: 1;
+            grid-row-end: 2;
+          }
+
+          .gallery__grid--item4 {
+            background: url("../../monticello/img/gallery__grid--item4.jpg") center center no-repeat;
+            grid-row-start: 2;
+            grid-row-end: 3;
+          }
+
+          .gallery__grid--item5 {
+            background: url("../../monticello/img/gallery__grid--item5.jpg") center center no-repeat;
+            grid-row-start: 2;
+            grid-row-end: 3;
+          }
+        }
+
+        .gallery__button {
+          font-family: 'GothamBook', sans-serif;
+          width: 190px;
+          height: 50px;
+          border: 1px solid #2c4058;
+          background: transparent;
+          color: #2c4058;
+          text-transform: uppercase;
+          outline: none;
+          display: block;
+          margin: 0 auto 140px auto;
+
+          &:hover {
+            -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+            -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+            box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+            border: none;
+          }
+        }
+
+      }
+    }
+
+    .section-maps {
+      height: 700px;
+      width: 100%;
+
+      #map {
+        width: 100%;
+        height: 100%;
+
+      }
+    }
+  }
+
+  footer {
+    height: 525px;
+    width: 100%;
+    background: url("../../monticello/img/bg_footer.jpg") center center no-repeat;
+    background-size: cover;
+
+    .ba-container {
+      width: 770px;
+      position: relative;
+      padding-top: 200px;
+
+      .touch__form {
+        min-height: 450px;
+        max-width: 770px;
+        width: 770px;
+        background: url("../../monticello/img/bg__touch-form.jpg") center bottom no-repeat #ffffff;
+        position: absolute;
+        top: -300px;
+        left: calc(50% - 385px);
+        padding: 60px 60px 60px 80px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          height: auto;
+          text-align: center;
+          font-family: 'gotham_mediumregular', sans-serif;
+          font-size: 44px;
+          color: #2c4058;
+          text-transform: uppercase;
+          margin: 0 auto 60px auto;
+          padding-top: 30px;
+          position: relative;
+          width: 330px;
+
+          &:before {
+            content: '';
+            width: 100px;
+            height: 2px;
+            background-color: #2c4058;
+            position: absolute;
+            top: 0;
+            left: calc(50% - 50px);
+
+          }
+        }
+
+        .touch__form--grid {
+          display: grid;
+          width: 100%;
+          height: 100%;
+          grid-template-rows: 190px;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 20px;
+
+          ul {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            list-style-type: none;
+
+            li {
+              color: #7e5aff;
+              font-size: 18px;
+
+              span {
+                color: #2c4058;
+                margin-left: 10px;
+                font-family: 'GothamBook', sans-serif;
+              }
+
+            }
+          }
+
+          form {
+            width: 100%;
+            height: 100%;
+
+            #name {
+              width: 100%;
+              border: none;
+              border-bottom: 1px solid #2c4058;
+              padding-bottom: 20px;
+              outline: none;
+              margin-bottom: 40px;
+              font-family: 'GothamBook0', sans-serif;
+              font-size: 18px;
+              color: #2c4058;
+
+              &::placeholder {
+                color: #4b5562;
+                opacity: .4;
+              }
+            }
+
+            #email {
+              width: 100%;
+              border: none;
+              border-bottom: 1px solid #2c4058;
+              padding-bottom: 20px;
+              outline: none;
+              margin-bottom: 30px;
+              font-family: 'GothamBook0', sans-serif;
+              font-size: 18px;
+              color: #2c4058;
+
+              &::placeholder {
+                color: #4b5562;
+                opacity: .4;
+              }
+            }
+
+            #touch__button {
+              width: 140px;
+              height: 50px;
+              border: 1px solid #2c4058;
+              background: transparent;
+              color: #2c4058;
+              text-transform: uppercase;
+              margin-bottom: 60px;
+              outline: none;
+              float: right;
+
+              &:hover {
+                -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                border: none;
+              }
+            }
+          }
+        }
+      }
+
+      div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer__logo {
+          background: url("../img/logo.png") center center no-repeat;
+          background-size: cover;
+          width: 241px;
+          height: 54px;
+          display: inline-block;
+          margin-bottom: 50px;
+        }
+
+        .footer__social {
+          width: 20%;
+          min-width: 125px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #aea7ff;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+          }
+
+        }
+      }
+
+      .copy {
+        font-family: 'GothamBook', sans-serif;
+        color: #fff;
+        font-size: 14px;
+        border-right: 1px solid #fff;
+        display: inline-block;
+        width: auto;
+        padding-right: 50px;
+        margin-right: 20px;
+      }
+
+      .author {
+        font-family: 'GothamBook', sans-serif;
+        color: #fff;
+        font-size: 14px;
+        display: inline-block;
+        width: 180px;
+
+      }
+
+    }
+  }
+
+}
+
+.ba-container {
+  max-width: 1170px;
+  padding: 0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+  body {
+    header {
+      position: relative;
+
+      .ba-container {
+
+        nav {
+          //justify-content: space-around;
+
+          .logo{
+            display: inline-block;
+            margin-left: 10px;
+          }
+          .menu{
+            display: inline-block;
+            margin: auto;
+          }
+
+          .social {
+            position: absolute;
+            top: 3px;
+            right: 15px;
+            flex-direction: column;
+            width: 40px;
+            a{
+              margin: 5px 0 5px 0;
+              font-size: 14px;
+              width: 38px;
+              height: 38px;
+            }
+          }
+
+
+        }
+      }
+    }
+    main{
+      .section-hero {
+        margin-top: -109px;
+        width: 100%;
+        height: 100vh;
+        background: url("../../monticello/img/bg-hero.jpg") center center no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .slider {
+          width: 85%;
+
+
+          .sliderItem {
+            max-width: 950px;
+            margin: 0 auto;
+            height: 20em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+            margin-left: calc(50% - 475px);
+
+
+            h1 {
+              text-transform: uppercase;
+              font-size: 70px;
+              letter-spacing: .05em;
+              color: #fff;
+            }
+
+            span {
+              display: block;
+              //font-family: 'GothamBook', sans-serif;
+              font-size: 16px;
+              line-height: 22px;
+              letter-spacing: .3em;
+              text-transform: uppercase;
+              color: #fff;
+            }
+          }
+
+          .slick-list {
+
+            .slick-track {
+              text-align: center;
+
+              .slick-current {
+
+              }
+            }
+          }
+
+        }
+
+      }
+
+      .section-weDo {
+        overflow-x: hidden;
+        width: 100%;
+
+        .ba-container {
+          margin-top: 60px;
+          height: 100%;
+
+          .grid-proj1 {
+            display: grid;
+            grid-template-columns: 52% 42%;
+            grid-template-rows: 70px 470px;
+            column-gap: 30px;
+            width: 100%;
+            padding: 0 3% 0 3%;
+            margin: 0 auto 100px auto;
+
+            .gridProj1-bg_img {
+              background: url("../../monticello/img/bg-proj1.jpg") center center no-repeat;
+              background-size: cover;
+              position: relative;
+              grid-row-start: 2;
+              grid-row-end: 3;
+              grid-column-start: 1;
+              grid-column-end: 2;
+
+              &:before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: #55b7ff;
+                position: absolute;
+                bottom: 15%;
+                right: 41%;
+                z-index: -1;
+              }
+            }
+
+            .gridProj1-about {
+              grid-row-start: 2;
+              grid-row-end: 3;
+              grid-column-start: 2;
+              grid-column-end: 3;
+              color: #2c4058;
+              padding: 60px 0;
+              width: 100%;
+
+
+              h3 {
+                font-family: 'GothamBook', sans-serif;
+                font-size: 22px;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+              }
+
+              h2 {
+                font-family: 'gothambold1', sans-serif;
+                font-size: 44px;
+                text-transform: uppercase;
+
+              }
+
+              p {
+                height: 57px;
+                overflow: hidden;
+                margin: 40px 0;
+              }
+
+              .button-proj1 {
+                width: 190px;
+                height: 50px;
+                border: 1px solid #2c4058;
+                background: transparent;
+                color: #2c4058;
+                text-transform: uppercase;
+                margin-bottom: 60px;
+                outline: none;
+
+                &:hover {
+                  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                  -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                  border: none;
+                }
+              }
+
+              span {
+                display: block;
+                font-family: 'open-sans', sans-serif;
+                font-style: italic;
+                font-size: 18px;
+                color: #2c4058;
+              }
+
+            }
+
+
+          }
+
+          .grid-proj2 {
+            display: grid;
+            grid-template-columns: 42% 52%;
+            grid-template-rows: 70px 470px;
+            column-gap: 30px;
+            width: 100%;
+            padding: 0 0 0 6%;
+            margin-bottom: 100px;
+
+            .gridProj2-about {
+              grid-row-start: 2;
+              grid-row-end: 3;
+              grid-column-start: 1;
+              grid-column-end: 2;
+              color: #2c4058;
+              padding: 60px 0;
+              width: 100%;
+
+
+              h3 {
+                font-family: 'GothamBook', sans-serif;
+                font-size: 22px;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+              }
+
+              h2 {
+                font-family: 'gothambold1', sans-serif;
+                font-size: 44px;
+                text-transform: uppercase;
+
+              }
+
+              p {
+                height: 57px;
+                overflow: hidden;
+                margin: 40px 0;
+              }
+
+              .button-proj2 {
+                width: 190px;
+                height: 50px;
+                border: 1px solid #2c4058;
+                background: transparent;
+                color: #2c4058;
+                text-transform: uppercase;
+                margin-bottom: 60px;
+                outline: none;
+
+                &:hover {
+                  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                  -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.46);
+                  border: none;
+                }
+              }
+
+              span {
+                display: block;
+                font-family: 'open-sans', sans-serif;
+                font-style: italic;
+                font-size: 18px;
+                color: #2c4058;
+              }
+
+            }
+
+            .gridProj2-bg_img {
+              background: url("../../monticello/img/bg-proj2.jpg") center center no-repeat;
+              background-size: cover;
+              position: relative;
+              grid-row-start: 2;
+              grid-row-end: 3;
+              grid-column-start: 2;
+              grid-column-end: 3;
+
+              &:after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: #7e5aff;
+                position: absolute;
+                bottom: 15%;
+                left: 41%;
+                z-index: -1;
+              }
+            }
+
+          }
+        }
+
+      }
+
+      .section-news {
+        background: url("../../monticello/img/bg-news.jpg") center center no-repeat;
+        background-size: cover;
+        height: 1035px;
+        width: 100%;
+        padding-top: 60px;
+
+        .ba-container {
+
+          .title {
+            height: 84px;
+            text-align: center;
+            font-family: 'gotham_mediumregular', sans-serif;
+            font-size: 44px;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0 auto 100px auto;
+            padding-top: 40px;
+            position: relative;
+            width: 330px;
+
+
+            &:before {
+              content: '';
+              width: 100px;
+              height: 2px;
+              background-color: #fff;
+              position: absolute;
+              top: 0;
+              left: calc(50% - 50px);
+
+            }
+          }
+
+          .slider_news {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+
+            .prevButton {
+              background: url("../img/arrowLeft.png") center center no-repeat;
+              content: "";
+              width: 30px;
+              height: 30px;
+              display: block;
+              position: absolute;
+              left: -20px;
+              top: calc(50% - 15px);
+              cursor: pointer;
+            }
+
+            .nextButton {
+              background: url("../img/arrowRight.png") center center no-repeat;
+              content: "";
+              width: 40px;
+              height: 40px;
+              display: block;
+              position: absolute;
+              right: -5px;
+              top: -20;
+              cursor: pointer;
+
+            }
+
+
+            .slider-news-item {
+              width: 370px;
+              //height: 620px;
+              margin: 0 10px;
+
+
+              .itemBG {
+                height: 47%;
+                width: 100%;
+              }
+
+              .itemInfo {
+                height: 53%;
+                width: 100%;
+                padding: 30px 20px;
+                background-color: #fff;
+
+                h2 {
+                  font-family: 'gothambold1', sans-serif;
+                  font-size: 18px;
+                  line-height: 34px;
+                  color: #2c4058;
+                }
+
+                p {
+                  font-family: 'open-sans', sans-serif;
+                  font-size: 18px;
+                  line-height: 30px;
+                  color: #4b5562;
+                  margin-bottom: 38px;
+                }
+
+                .author {
+                  height: 60px;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+
+                  .photo {
+                    width: 35%;
+                    //height: 100%;
+                    margin-right: 10px;
+                  }
+
+                  .name {
+                    font-family: 'GothamBook', sans-serif;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #2c4058;
+                    display: flex;
+                    flex-direction: column;
+                    width: 63%;
+
+                    span {
+                      font-size: 14px;
+                      line-height: 22px;
+                      color: #55b7ff;
+                    }
+                  }
+                }
+              }
+
+
+            }
+
+            .itemDunn {
+
+              .itemBG {
+                background-image: url("../../monticello/img/lauren-mancke.jpg");
+                background-size: cover;
+                //width: 370px;
+                height: 240px;
+
+              }
+
+              .itemInfo {
+                .author {
+                  .photo {
+                    background: url("../../monticello/img/dunn.png") center center no-repeat;
+                    //width: 60px;
+                    height: 60px;
+                  }
+                }
+              }
+            }
+
+            .itemFreeman {
+
+              .itemBG {
+                background-image: url("../../monticello/img/matthew-hamilton.jpg");
+                background-size: cover;
+                //width: 370px;
+                height: 240px;
+
+              }
+
+              .itemInfo {
+                .author {
+                  .photo {
+                    background-image: url("../../monticello/img/freeman.png");
+                    width: 60px;
+                    height: 60px;
+                  }
+                }
+              }
+            }
+
+            .itemWard {
+
+              .itemBG {
+                background-image: url("../../monticello/img/joel-filipe.jpg");
+                background-size: cover;
+                height: 240px;
+
+              }
+
+              .itemInfo {
+                .author {
+                  .photo {
+                    background-image: url("../../monticello/img/ward.png");
+                    width: 60px;
+                    height: 60px;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+
+    }
+  }
+
+
+}
