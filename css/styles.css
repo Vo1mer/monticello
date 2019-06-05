@@ -275,7 +275,7 @@ body {
     margin-top: -109px;
     width: 100%;
     height: 100vh;
-    background: url("../../monticello/img/bg-hero.jpg") center center no-repeat;
+    background: url("../img/bg-hero.jpg") center center no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -377,7 +377,7 @@ body {
         width: 100%;
         margin-bottom: 140px; }
         body main .section-weDo .ba-container .grid-proj1 .gridProj1-bg_img {
-          background: url("../../monticello/img/bg-proj1.jpg") center center no-repeat;
+          background: url("../img/bg-proj1.jpg") center center no-repeat;
           background-size: cover;
           position: relative;
           grid-row-start: 2;
@@ -484,7 +484,7 @@ body {
             font-size: 18px;
             color: #2c4058; }
         body main .section-weDo .ba-container .grid-proj2 .gridProj2-bg_img {
-          background: url("../../monticello/img/bg-proj2.jpg") center center no-repeat;
+          background: url("../img/bg-proj2.jpg") center center no-repeat;
           background-size: cover;
           position: relative;
           grid-row-start: 2;
@@ -501,7 +501,7 @@ body {
             left: 41%;
             z-index: -1; }
   body main .section-news {
-    background: url("../../monticello/img/bg-news.jpg") center center no-repeat;
+    background: url("../img/bg-news.jpg") center center no-repeat;
     background-size: cover;
     height: 1035px;
     width: 100%;
@@ -530,23 +530,23 @@ body {
       margin: 0 auto;
       position: relative; }
       body main .section-news .ba-container .slider_news .prevButton {
-        background: url("../../monticello/img/arrowLeft.png") center center no-repeat;
+        background: url("../img/arrowLeft.png") center center no-repeat;
         content: "";
         width: 40px;
         height: 40px;
         display: block;
         position: absolute;
-        left: -5px;
+        left: -50px;
         top: calc(50% - 20px);
         cursor: pointer; }
       body main .section-news .ba-container .slider_news .nextButton {
-        background: url("../../monticello/img/arrowRight.png") center center no-repeat;
+        background: url("../img/arrowRight.png") center center no-repeat;
         content: "";
         width: 40px;
         height: 40px;
         display: block;
         position: absolute;
-        right: -5px;
+        right: -50px;
         top: calc(50% - 15px);
         cursor: pointer; }
       body main .section-news .ba-container .slider_news .slick-dots {
@@ -608,27 +608,27 @@ body {
                 line-height: 22px;
                 color: #55b7ff; }
       body main .section-news .ba-container .slider_news .itemDunn .itemBG {
-        background-image: url("../../monticello/img/lauren-mancke.jpg");
+        background-image: url("../img/lauren-mancke.jpg");
         background-size: cover;
         height: 240px; }
       body main .section-news .ba-container .slider_news .itemDunn .itemInfo .author .photo {
-        background-image: url("../../monticello/img/dunn.png");
+        background-image: url("../img/dunn.png");
         width: 60px;
         height: 60px; }
       body main .section-news .ba-container .slider_news .itemFreeman .itemBG {
-        background-image: url("../../monticello/img/matthew-hamilton.jpg");
+        background-image: url("../img/matthew-hamilton.jpg");
         background-size: cover;
         height: 240px; }
       body main .section-news .ba-container .slider_news .itemFreeman .itemInfo .author .photo {
-        background-image: url("../../monticello/img/freeman.png");
+        background-image: url("../img/freeman.png");
         width: 60px;
         height: 60px; }
       body main .section-news .ba-container .slider_news .itemWard .itemBG {
-        background-image: url("../../monticello/img/joel-filipe.jpg");
+        background-image: url("../img/joel-filipe.jpg");
         background-size: cover;
         height: 240px; }
       body main .section-news .ba-container .slider_news .itemWard .itemInfo .author .photo {
-        background-image: url("../../monticello/img/ward.png");
+        background-image: url("../img/ward.png");
         width: 60px;
         height: 60px; }
   body main .section-gallery {
@@ -667,23 +667,23 @@ body {
         width: 100%;
         height: 100%; }
       body main .section-gallery .ba-container .gallery__grid .gallery__grid--item1 {
-        background: url("../../monticello/img/gallery__grid--item1.jpg") center center no-repeat;
+        background: url("../img/gallery__grid--item1.jpg") center center no-repeat;
         grid-row-start: 1;
         grid-row-end: 3; }
       body main .section-gallery .ba-container .gallery__grid .gallery__grid--item2 {
-        background: url("../../monticello/img/gallery__grid--item2.jpg") center center no-repeat;
+        background: url("../img/gallery__grid--item2.jpg") center center no-repeat;
         grid-row-start: 1;
         grid-row-end: 2; }
       body main .section-gallery .ba-container .gallery__grid .gallery__grid--item3 {
-        background: url("../../monticello/img/gallery__grid--item3.jpg") center center no-repeat;
+        background: url("../img/gallery__grid--item3.jpg") center center no-repeat;
         grid-row-start: 1;
         grid-row-end: 2; }
       body main .section-gallery .ba-container .gallery__grid .gallery__grid--item4 {
-        background: url("../../monticello/img/gallery__grid--item4.jpg") center center no-repeat;
+        background: url("../img/gallery__grid--item4.jpg") center center no-repeat;
         grid-row-start: 2;
         grid-row-end: 3; }
       body main .section-gallery .ba-container .gallery__grid .gallery__grid--item5 {
-        background: url("../../monticello/img/gallery__grid--item5.jpg") center center no-repeat;
+        background: url("../img/gallery__grid--item5.jpg") center center no-repeat;
         grid-row-start: 2;
         grid-row-end: 3; }
     body main .section-gallery .ba-container .gallery__button {
@@ -711,7 +711,7 @@ body {
   body footer {
     height: 525px;
     width: 100%;
-    background: url("../../monticello/img/bg_footer.jpg") center center no-repeat;
+    background: url("../img/bg_footer.jpg") center center no-repeat;
     background-size: cover; }
     body footer .ba-container {
       width: 770px;
@@ -721,7 +721,7 @@ body {
         min-height: 450px;
         max-width: 770px;
         width: 770px;
-        background: url("../../monticello/img/bg__touch-form.jpg") center bottom no-repeat #ffffff;
+        background: url("../img/bg__touch-form.jpg") center bottom no-repeat #ffffff;
         position: absolute;
         top: -300px;
         left: calc(50% - 385px);
@@ -887,7 +887,7 @@ body {
     margin-top: -109px;
     width: 100%;
     height: 100vh;
-    background: url("../../monticello/img/bg-hero.jpg") center center no-repeat;
+    background: url("../img/bg-hero.jpg") center center no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -934,7 +934,7 @@ body {
         padding: 0 3% 0 3%;
         margin: 0 auto 100px auto; }
         body main .section-weDo .ba-container .grid-proj1 .gridProj1-bg_img {
-          background: url("../../monticello/img/bg-proj1.jpg") center center no-repeat;
+          background: url("../img/bg-proj1.jpg") center center no-repeat;
           background-size: cover;
           position: relative;
           grid-row-start: 2;
@@ -1041,7 +1041,7 @@ body {
             font-size: 18px;
             color: #2c4058; }
         body main .section-weDo .ba-container .grid-proj2 .gridProj2-bg_img {
-          background: url("../../monticello/img/bg-proj2.jpg") center center no-repeat;
+          background: url("../img/bg-proj2.jpg") center center no-repeat;
           background-size: cover;
           position: relative;
           grid-row-start: 2;
@@ -1058,7 +1058,7 @@ body {
             left: 41%;
             z-index: -1; }
   body main .section-news {
-    background: url("../../monticello/img/bg-news.jpg") center center no-repeat;
+    background: url("../img/bg-news.jpg") center center no-repeat;
     background-size: cover;
     height: 1035px;
     width: 100%;
@@ -1094,7 +1094,7 @@ body {
         height: 30px;
         display: block;
         position: absolute;
-        left: -20px;
+        left: -35px;
         top: calc(50% - 15px);
         cursor: pointer; }
       body main .section-news .ba-container .slider_news .nextButton {
@@ -1104,7 +1104,7 @@ body {
         height: 40px;
         display: block;
         position: absolute;
-        right: -5px;
+        right: -35px;
         top: -20;
         cursor: pointer; }
       body main .section-news .ba-container .slider_news .slider-news-item {
@@ -1150,26 +1150,26 @@ body {
                 line-height: 22px;
                 color: #55b7ff; }
       body main .section-news .ba-container .slider_news .itemDunn .itemBG {
-        background-image: url("../../monticello/img/lauren-mancke.jpg");
+        background-image: url("../img/lauren-mancke.jpg");
         background-size: cover;
         height: 240px; }
       body main .section-news .ba-container .slider_news .itemDunn .itemInfo .author .photo {
-        background: url("../../monticello/img/dunn.png") center center no-repeat;
+        background: url("../img/dunn.png") center center no-repeat;
         height: 60px; }
       body main .section-news .ba-container .slider_news .itemFreeman .itemBG {
-        background-image: url("../../monticello/img/matthew-hamilton.jpg");
+        background-image: url("../img/matthew-hamilton.jpg");
         background-size: cover;
         height: 240px; }
       body main .section-news .ba-container .slider_news .itemFreeman .itemInfo .author .photo {
-        background-image: url("../../monticello/img/freeman.png");
+        background-image: url("../img/freeman.png");
         width: 60px;
         height: 60px; }
       body main .section-news .ba-container .slider_news .itemWard .itemBG {
-        background-image: url("../../monticello/img/joel-filipe.jpg");
+        background-image: url("../img/joel-filipe.jpg");
         background-size: cover;
         height: 240px; }
       body main .section-news .ba-container .slider_news .itemWard .itemInfo .author .photo {
-        background-image: url("../../monticello/img/ward.png");
+        background-image: url("../img/ward.png");
         width: 60px;
         height: 60px; } }
 

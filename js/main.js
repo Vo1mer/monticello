@@ -37,6 +37,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: true,
+        arrows: true,
         prevArrow: "<a type='button' class='prevButton pull-left'></a>",
         nextArrow: "<a type='button' class='nextButton pull-right'></a>",
         responsive: [
